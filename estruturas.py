@@ -87,7 +87,7 @@ class Lista_Encad:
                 return i
             point = point.next
             i += 1
-        raise ValueError (f'{elem} nao esta na lista')
+        raise ValueError (f'{elem}: nao esta na lista')
     
     def insert(self, index, elem):
         node = Node(elem)
@@ -103,7 +103,7 @@ class Lista_Encad:
     
     def remove(self,elem):
         if self.head == None:
-            raise ValueError(f'{elem} nao esta na lista')
+            raise ValueError(f'{elem}: nao esta na lista')
         elif self.head.dado == elem:
             self.head == self.head.next
         else:
@@ -117,5 +117,5 @@ class Lista_Encad:
                 point = point.next
             self._size -= 1
             return True
-        raise ValueError(f'{elem} nao esta na lista')
+        raise ValueError(f'{elem}: nao esta na lista')
 

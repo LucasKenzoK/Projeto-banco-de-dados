@@ -20,8 +20,7 @@ while True:
     if r in 'N':
         break
     while r not in 'SN':
-        r = str(input('ERRO!!! digite apenas S ou N: ')).upper()
-
+        r = str(input('E RRO!!! digite apenas S ou N: ')).upper()
 
 for pessoa in lista_pessoas:
     if pessoa[0:2] == 'C1':
