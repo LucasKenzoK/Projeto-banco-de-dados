@@ -1,7 +1,9 @@
 from estruturas import *
+from ordem import *
 
-recepcao = Lista_Encad()
-atendimento = Stack()
+fila_a = Queue()
+fila_b = Queue()
+C_pilha = Stack()
 
 lista_pessoas = []
 emergencia = []
@@ -14,7 +16,12 @@ while True:
     while prioridade not in 'AB,C1,C2,C3':
         prioridade = str(input('ERRO!!! digite apenas A,B ou C: ')).upper()
 
-    lista_pessoas.append(prioridade + '--' + nome)
+    if prioridade in 'C1C2C3':
+        emergencia.append(prioridade + '--' + nome)
+    elif prioridade in 'A':
+        fila_a.add(prioridade + '--' + nome)
+    elif prioridade in 'B':
+        fila_b.add(prioridade + '--' + nome)
 
     r = str(input('Quer continuar?(N|S): ')).upper()
     if r in 'N':
@@ -22,15 +29,7 @@ while True:
     while r not in 'SN':
         r = str(input('E RRO!!! digite apenas S ou N: ')).upper()
 
-for pessoa in lista_pessoas:
-    if pessoa[0:2] == 'C1':
-        emergencia.append(pessoa)
-    if pessoa[0:2] == 'C2':
-        emergencia.append(pessoa)
-    if pessoa[0:2] == 'C3':
-        emergencia.append(pessoa)
+for c in sorted(emergencia, reverse= True):
+    C_pilha.push(c)
 
-for i in sorted(emergencia):
-    atendimento.push(i)
-
-print(atendimento.items)
+Ordem(fila_a,fila_b)
