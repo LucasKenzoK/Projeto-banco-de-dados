@@ -7,7 +7,4 @@ Projeto de Estrutura de dados:
 	- nivel 1 (acidentes leves, perna quebrada)
 	- nivel 2 (acidentes medios e ou brigas, alguma perca de sangue)
 	- nivel 3 (acidentes pesados, atropelamento, hemoragia cevera, alguma doenca altamente contagiante)
-	- caso entre qualquer emergencial seja retirado diretamente pra atendimento
-	
-
-
+	- caso entre qualquer emergencial seja retirado diretamente pra atendimentos
