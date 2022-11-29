@@ -8,3 +8,5 @@ Projeto de Estrutura de dados:
 	- nivel 2 (acidentes medios e ou brigas, alguma perca de sangue)
 	- nivel 3 (acidentes pesados, atropelamento, hemoragia cevera, alguma doenca altamente contagiante)
 	- caso entre qualquer emergencial seja retirado diretamente pra atendimentos
+	
+- https://www.youtube.com/watch?v=fL3QbJR6W78&ab_channel=Kenzo
